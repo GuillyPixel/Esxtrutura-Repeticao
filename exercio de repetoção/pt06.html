@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exibir os divisores</title>
+</head>
+<body>
+
+    <div id="resultado"></div>
+
+<script>
+   
+    let numero= prompt("Digite um numero:");
+        
+    numero =parseInt(numero);
+        let n =1;
+        let divisores = '';
+
+    while (n <= numero){
+        if (numero % n === 0) {
+            divisores += n + "<br>";}
+            n++;}
+
+        document.getElementById('resultado').innerHTML = "Divisores de " + numero + ":<br>" + divisores;
+    </script>
+    
+</body>
+</html>

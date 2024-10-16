@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programa que ler 5 números inteiros e mostre a média aritmética</title>
+</head>
+<body>
+
+    <p id="resultado"></p>
+
+<script>
+    
+    let soma = 0;
+    let contador = 0;
+
+    while (contador < 5) {
+        
+        let numero = parseInt(prompt("Digite um número (no maximo 5)"));
+        soma += numero;
+        contador++;
+    
+        let media = soma / contador;
+
+        const resultadoElement = document.getElementById('resultado');
+        
+        resultadoElement.textContent = "A média aritmética é: " + media;}
+</script>
+    
+</body>
+</html>
